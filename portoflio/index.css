@@ -5,11 +5,12 @@
 .navbar ul li a {
     color: #fff !important;
     font-size: 15px;
+    transition: .5s;
 }
 
 .navbar ul li a:hover {
     background-color: #fff !important;
-    color: #458B74 !important;
+    color: #000000 !important;
 }
 
 .navbar-brand {
@@ -47,6 +48,17 @@ h2 {
     height: 5px;
     width: 90%;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #725165, rgba(0, 0, 0, 0));
+    animation:  fade 3s;
+}
+
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .btn {
@@ -60,7 +72,28 @@ h2 {
     font-size: 25px;
     font-size: 12px;
 }
-
+.one{
+animation: button 1s;
+}
+.two{
+    animation: button 2s;
+}
+.tree {
+    animation: button 3s;
+}
+.four{
+    animation:button  4s;
+}
+@keyframes button{
+    0%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 10px;
+    }
+}
 .btn:hover {
     background-color: #fff;
     color: #4e1f46;
