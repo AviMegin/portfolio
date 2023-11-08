@@ -755,4 +755,71 @@ marquee span:before {
 
   .move{
     margin-left: 1%;
+    margin-right: 1%;
   }
+
+
+.chat-container{
+    margin: 5%;
+    padding: 3%;
+    border-top: 1px solid #94918f;
+    border-bottom: 1px solid #94918f;
+}
+.input-container{
+    width: 100%;
+}
+.input-container button{
+ background-color:  #94918f;
+ height: 35px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+}
+.input-container button:hover{
+    background-color:  #463e38;
+    height: 35px;
+       outline: none;
+       cursor: pointer;
+       border: none;
+   }
+
+#message-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #94918f;
+    width: 80%;
+    margin-right: 10px;
+    background-color: #000;
+    color: white;
+  }
+  #message-input:focus {
+    outline: none;
+  }
+.message-box{
+    height: 100vh;
+    overflow: scroll;
+}
+.line{
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid #94918f;
+}
+.line a{
+    color: #161419;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: -1px;
+    align-items: center;
+    margin-top: auto;
+    border-top: none;
+    
+    text-align: left;
+}
+.research{
+    padding: 0 20px;
+    overflow-y: scroll;
+}
+.research h2{
+    font-size:17px;
+}
