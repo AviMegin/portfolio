@@ -173,14 +173,14 @@ body {
 
 @media screen and (max-width: 1260px) {
     .blog-big__title {
-        font-size: 9vw;
+        font-size: 40px;
         letter-spacing: -2px;
     }
 }
 
 @media screen and (max-width: 560px) {
     .blog-big__title {
-        font-size: 36px;
+        font-size: 26px;
         margin-bottom: 12px;
     }
 }
@@ -541,7 +541,7 @@ marquee span:before {
     height: 99%;
     max-height: 90% ;
     overflow: hidden;
-    grid-template-columns: 15% 55% 30%;
+    grid-template-columns: 10% 65% 25%;
     grid-template-rows: 100%;
     width: 100%;
     padding: 40px 4px;
