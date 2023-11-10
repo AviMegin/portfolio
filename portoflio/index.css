@@ -823,3 +823,13 @@ marquee span:before {
 .research h2{
     font-size:17px;
 }
+
+.lo{
+    padding: 0 25px;
+    overflow: scroll;
+
+}
+.lonav{
+    display: grid;
+    padding: 0 25px;
+}
