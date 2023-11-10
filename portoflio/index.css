@@ -164,10 +164,14 @@ body {
     line-height: 1;
     margin-bottom: 6px;
 }
-
+@media screen and (max-width: 1600px) {
+    .blog-big__title {
+        font-size: 60px;
+    }
+}
 @media screen and (max-width: 1400px) {
     .blog-big__title {
-        font-size: 120px;
+        font-size: 60px;
     }
 }
 
@@ -192,8 +196,13 @@ body {
 
 .blog-article {
     padding: 0 20px;
+    font-size:  font-size: 1em;;
 }
-
+@media screen and (max-width: 1600px) {
+    .blog-article p {
+        font-size: 15px;
+    }
+}
 .blog-article img {
     height: 260px;
     max-height: 22vh;
@@ -343,7 +352,8 @@ marquee span:before {
 }
 
 .blog-right {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: calc(100% + 60px);
 }
 
@@ -424,6 +434,7 @@ marquee span:before {
 
 .blog-right-container+.blog-right-container {
     margin-top: 40px;
+    overflow-y: scroll;
 }
 
 .right-blog {
@@ -591,6 +602,7 @@ marquee span:before {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+            overflow-y: scroll;
   }
   
   .col{
@@ -826,10 +838,52 @@ marquee span:before {
 
 .lo{
     padding: 0 25px;
-    overflow: scroll;
+    overflow-y: scroll;
 
 }
 .lonav{
+    overflow-y: scroll;
     display: grid;
     padding: 0 25px;
 }
+
+.video{
+    width: 500px;
+  }
+  #immersive-video {
+    width: 100%; /* Make the video fill its container */
+    max-width: 100%; /* Ensure the video doesn't exceed its container */
+    display: block; /* Adjust the display property */
+    margin: 0 auto; /* Center the video horizontally */
+    border-radius: 10px; /* Add a border-radius for a rounded corner effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Apply a subtle box shadow */
+  }
+  
+
+
+
+  .link{
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    color: #000000;
+    text-decoration: none;
+  }
+
+.link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
