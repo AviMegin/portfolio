@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
+   /* dark mode button */
+   :root {
+    --primary-color: #302AE6;
+    --secondary-color: #e9e6e4;
+    --font-color: #222020;
+    --bg-color: #a3a483;
+    --heading-color: #dcb097;
+}
+
+[data-theme="dark"] {
+    --primary-color: #9A97F3;
+    --secondary-color: #393a3a;
+    --font-color: #e1e1ff;
+    --bg-color: #161625;
+    --heading-color: #818cab;
+}
 * {
     outline: none;
     box-sizing: border-box;
@@ -15,7 +31,7 @@ img {
 }
 
 body {
-    background-color: #a3a483;
+    background-color:var(--bg-color);
     display: flex;
     font-family: "Inter", sans-serif;
     justify-content: center;
@@ -23,6 +39,7 @@ body {
     flex-direction: column;
     width: 100%;
    overflow: hidden;
+   color: var(--font-color);
     font-weight: 400;
     height: 100vh;
 }
@@ -34,7 +51,7 @@ body {
 }
 
 .blog {
-    background-color: #e9e6e4;
+    background-color:var(--secondary-color) ;
     max-width: 90%;
     display: grid;
     height: 99%;
@@ -79,7 +96,8 @@ body {
 .blog-menu {
     font-size: 22px;
     text-decoration: none;
-    color: #161419;
+    color: var(--font-color)
+    ;
     display: flex;
     letter-spacing: -0.5px;
     align-items: center;
@@ -271,7 +289,7 @@ body {
 }
 
 .blog-article a {
-    color: #161419;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 26px;
     letter-spacing: -1px;
@@ -463,11 +481,11 @@ marquee span:before {
     background-color: #382610;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: rgb(223, 210, 177), 219, 214);
+    background-color: rgb(223, 210, 177);
     border-radius: 20px;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #dcb097;
+    background-color: var(--heading-color);
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;
@@ -476,12 +494,12 @@ marquee span:before {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-color: #121418;
+    background-color: var(--bg-color);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    color: #e9e6e4;
+    color: var(--font-color);
     padding: 20px;
     text-align: center;
     margin-top: 40px;
@@ -521,7 +539,7 @@ marquee span:before {
     padding: 10px;
     display: inline-block;
     position: relative;
-    color: #000000;
+    color: var(--font-color);
     text-decoration: none;
   }
 
@@ -546,7 +564,7 @@ marquee span:before {
 /* Projects*/
 
 .projects {
-    background-color: #e9e6e4;
+    background-color: var(--secondary-color);
     max-width: 90%;
     display: grid;
     height: 99%;
@@ -581,7 +599,7 @@ marquee span:before {
 
 
 .project-cards a {
-    color: #161419;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 26px;
     letter-spacing: -1px;
@@ -770,31 +788,58 @@ marquee span:before {
     margin-right: 1%;
   }
 
-
-.chat-container{
+  .chat-container {
     margin: 5%;
     padding: 3%;
     border-top: 1px solid #94918f;
     border-bottom: 1px solid #94918f;
 }
-.input-container{
-    width: 100%;
+
+.messages {
+    display: flex;
+    flex-direction: column;
 }
-.input-container button{
- background-color:  #94918f;
- height: 35px;
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+    max-width: 80%;
+}
+
+.incoming {
+    align-self: flex-start;
+}
+
+.outgoing {
+    align-self: flex-end;
+}
+
+.message-content {
+    padding: 8px;
+    border-radius: 8px;
+ 
+    max-width: 80%;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.input-container button {
+    background-color: #94918f;
+    height: 35px;
     outline: none;
     cursor: pointer;
     border: none;
     transition: 0.5s;
 }
-.input-container button:hover{
-    background-color:  #463e38;
-    height: 35px;
-       outline: none;
-       cursor: pointer;
-       border: none;
-   }
+
+.input-container button:hover {
+    background-color: #463e38;
+}
 
 #message-input {
     flex: 1;
@@ -804,21 +849,25 @@ marquee span:before {
     margin-right: 10px;
     background-color: #000;
     color: white;
-  }
-  #message-input:focus {
+ 
+}
+
+#message-input:focus {
     outline: none;
-  }
-.message-box{
-    height: 100vh;
+}
+
+.message-box {
+    height: 60vh; /* Adjust as needed */
     overflow: scroll;
 }
+
 .line{
     height: 100%;
     width: 100%;
     border-right: 1px solid #94918f;
 }
 .line a{
-    color: #161419;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 20px;
     letter-spacing: -1px;
@@ -866,7 +915,7 @@ marquee span:before {
     padding: 10px;
     display: inline-block;
     position: relative;
-    color: #000000;
+    color: var(--font-color);
     text-decoration: none;
   }
 
@@ -886,4 +935,82 @@ marquee span:before {
   .link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+  .white{
+    background-color: white;
+  }
+
+  
+
+
+
+
+
+
+.theme-switch-wrapper {
+    display: flex;
+    position: absolute;
+    align-items:center;
+    color: var(--font-color);
+    z-index: 1;
+    margin-left: -45%;
+
+
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+  }
+
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #a3a483;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 5px;
+;
+    border: 1px #000;
+  }
+  
+  .slider.round:before {
+    border-radius: 5px;
+    border: 1px #000;
+  }
+  nav{
+    
+
   }

@@ -13,9 +13,9 @@ async function sendMessage() {
 function getBotResponse(userInput) {
     // Simulate getting responses from the JavaScript file
     const responses = {
-        hello: ['Hi there!', 'Hello!', 'Hey!'],
+        hello:['Hi there!', 'Hello!', 'Hey!','wassuuup','yo whatss popping','Hiyaaah','hey whatsup'],
         'how are you': ["I'm good, thanks!", "I'm doing well, how about you?", "I'm great!"],
-        "what's your name": ["I'm a chatbot.", "Call me ChatMaster.", "I don't have a name. You can call me anything."],
+        "whats your name": ["I'm a chatbot.", "Call me Megin.", "I don't have a name. You can call me anything."],
         bye: ['Goodbye!', 'See you later!', 'Bye!'],
     };
 
