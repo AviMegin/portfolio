@@ -51,6 +51,7 @@ body {
 }
 
 .blog {
+    border-radius: 5px;
     background-color:var(--secondary-color) ;
     max-width: 90%;
     display: grid;
