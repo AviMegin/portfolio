@@ -134,8 +134,7 @@ body {
 @media screen and (max-width: 768px) {
     .blog {
         
-        width: 100%;
-        max-width: none;
+       
     }
 }
 
@@ -1071,7 +1070,10 @@ marquee span:before {
     border-radius: 5px;
     border: 1px #000;
   }
-  nav{
-    
-
+  .blog-right-page-subtitle a{
+    color: #000;
   }
+  .Link{
+    color: #000;
+  }
+  
