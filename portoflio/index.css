@@ -642,27 +642,9 @@ marquee span:before {
     position: relative;
 }
 
-@media screen and (max-width: 1030px) {
-    .projects {
-        grid-template-columns: 20% 50% 30%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .projects {
-        grid-template-columns: 25% 75%;
-        width: 100%;
-        max-width: none;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .projects {
-        grid-template-columns: 100%;
-    }
-}
 
 
+ 
 
 .project-cards a {
     color: var(--font-color);
