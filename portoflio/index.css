@@ -625,6 +625,12 @@ marquee span:before {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+.nav-item .t{
+    text-align: left;
+}
+.blog-article a .t{
+    text-align: left;
+}
 
 /* Projects*/
 
