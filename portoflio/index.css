@@ -23,6 +23,19 @@
     box-sizing: border-box;
 }
 
+.social a:link{
+
+color: #000;
+text-align: right;
+}
+.social a:visited {
+
+    color: #9A97F3;
+    text-align: right;
+    }
+.social a:hover{
+    color: #a3a483;
+}
 .dropdown {
     display: inline-block;
 }
